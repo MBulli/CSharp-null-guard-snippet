@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+		<Title>Null Guard</Title>
+		<Shortcut>ng</Shortcut>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Object>
+				<ID>Attribute</ID>
+				<Type>System.Object</Type>
+				<ToolTip>An attribute to null check.</ToolTip>
+				<Default>attribute</Default>
+			</Object>
+		</Declarations>			
+	
+		<Code Language="CSharp">
+			<![CDATA[if ($Attribute$ == null)
+				throw new ArgumentNullException("$Attribute$");
+			]]>
+		</Code>
+	</Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+	<Header>
+		<Title>Null Empty String Guard</Title>
+		<Shortcut>ngs</Shortcut>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Object>
+				<ID>Attribute</ID>
+				<Type>System.Object</Type>
+				<ToolTip>A string attribute to check.</ToolTip>
+				<Default>string</Default>
+			</Object>
+		</Declarations>			
+	
+		<Code Language="CSharp">
+			<![CDATA[if (string.IsNullOrEmpty($Attribute$))
+				throw new ArgumentNullException("$Attribute$");
+			]]>
+		</Code>
+	</Snippet>
+  </CodeSnippet>
+</CodeSnippets>
